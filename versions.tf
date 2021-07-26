@@ -2,7 +2,7 @@ terraform {
   required_providers {
     ibm = {
       source = "jonwoodlief/catalog"
-      version = "0.0.100"
+      version = "0.0.200"
       #source = "IBM-Cloud/ibm"
       #version = "1.27.1"
     }
