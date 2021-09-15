@@ -7,6 +7,10 @@ data "template_file" "test" {
   }
 }
 
+terraform {
+  required_version = ">= 0.15, <.20"
+}
+
 # resource "ibm_cm_catalog" "cm_catalog" {
 #     label = "tf_test_offering_catalog"
 #     short_description = "testing terraform provider with catalog"
