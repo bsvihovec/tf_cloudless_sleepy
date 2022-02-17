@@ -10,18 +10,18 @@ variable "sample_var" {
   default     = "hello"
 }
 
-# variable "sleepy_time" {
-#   description = "How long our local-exec will take a nap."
-#   default     = 0
-# }
+variable "sleepy_time" {
+  description = "How long our local-exec will take a nap."
+  default     = 0
+}
 
-# variable "string_array_with_type" {
-#   type = list(string)
-# }
+variable "string_array_with_type" {
+  type = list(string)
+}
 
-# variable "boolean_with_type" {
-#   type = bool
-# }
+variable "boolean_with_type" {
+  type = bool
+}
 
 # variable "int_with_type" {
 #   type = number
@@ -37,10 +37,36 @@ variable "sample_var" {
 # #   }))
 # # }
 
-# variable "object_with_type" {
-#   type = object({foo = string})
-#   default = {foo:"bar"}
-# }
+variable "object_with_type" {
+  type = object({foo = string})
+  default = {foo:"bar"}
+}
+
+variable "a_password" {
+  type = string
+}
+
+variable "another_password" {
+  type = string
+}
+
+variable "multiline_password" {
+  type = string
+}
+
+variable "hidden_password" {
+  type = string
+}
+
+variable "hidden_string" {
+  type = string
+}
+
+variable "cluster_id" {
+  type = string 
+}
+
+
 
 # variable "string_array_no_type" {
 #   default = ["a", "b", "c"] 
